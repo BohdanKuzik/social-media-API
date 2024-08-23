@@ -19,4 +19,4 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-]
+] + debug_toolbar_urls()
