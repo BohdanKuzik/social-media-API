@@ -39,12 +39,11 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
 
     "django_filters",
-    "debug_toolbar",
     "drf_spectacular",
     "rest_framework",
     "rest_framework_simplejwt",
 
-    "profiles",
+    "profile",
     "post",
     "comment",
     "follow",
@@ -60,7 +59,6 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    "debug_toolbar.middleware.DebugToolbarMiddleware",
 ]
 
 ROOT_URLCONF = "social_media_API.urls"
@@ -125,6 +123,7 @@ USE_I18N = True
 
 USE_TZ = True
 
+AUTH_USER_MODEL = "user.User"
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
