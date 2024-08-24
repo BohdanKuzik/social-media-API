@@ -16,3 +16,4 @@ celery==5.4.0
 redis==3.5.3
 coverage==7.6.1
 stripe==10.7.0
+pillow==10.4.0
